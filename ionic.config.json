@@ -1,0 +1,7 @@
+{
+  "name": "SDRtrack",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
