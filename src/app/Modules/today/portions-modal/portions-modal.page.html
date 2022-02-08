@@ -1,0 +1,76 @@
+<ion-content>
+  <ion-card *ngFor="let portion of portions">
+    <ion-card-header>
+      <ion-card-subtitle>{{portion.food.category}}</ion-card-subtitle>
+      <ion-card-title class="ion-text-center">{{portion.food.name}}</ion-card-title>
+      <ion-card-subtitle class="ion-text-center">{{portion.grams}} Gr.</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <!-- <ion-row class="ion-align-items-center ion-text-center">
+          <ion-col size="12">
+            <ion-card-subtitle>{{meal.date}}</ion-card-subtitle>
+          </ion-col>
+        </ion-row> -->
+        <ion-row class="ion-align-items-center ion-text-center">
+          <ion-col size="4">
+            <ion-card-title>Calories</ion-card-title>
+            <ion-card-subtitle>{{portion.calories}} Kcal</ion-card-subtitle>
+          </ion-col>
+          <ion-col size="4">
+            <ion-card-title>Carbs</ion-card-title>
+            <ion-card-subtitle>{{portion.carbs}}g</ion-card-subtitle>
+          </ion-col>
+          <ion-col size="4">
+            <ion-card-title>Sugars</ion-card-title>
+            <ion-card-subtitle>{{portion.sugars}}g</ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-align-items-center ion-text-center">
+          <ion-col size="4">
+            <ion-card-title>Proteins</ion-card-title>
+            <ion-card-subtitle>{{portion.proteins}}g</ion-card-subtitle>
+          </ion-col>
+          <ion-col size="4">
+            <ion-card-title>Fats</ion-card-title>
+            <ion-card-subtitle>{{portion.fats}}g</ion-card-subtitle>
+          </ion-col>
+          <ion-col size="4">
+            <ion-card-title>Fibers</ion-card-title>
+            <ion-card-subtitle>{{portion.fibers}}g</ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>  
+</ion-content>
+      
+  <!--     
+      <ion-accordion-group>
+        <ion-accordion *ngFor="let portion of portions" [value]="portion.food.name">
+          <ion-item slot="header">
+            <ion-label>{{portion.food.category}}: {{portion.food.name}} {{portion.grams}}Gr.</ion-label>
+          </ion-item>
+          <ion-list slot="content">
+            <ion-item>
+              <ion-label>Calories: {{portion.calories}} Kcal</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Carbs: {{portion.carbs}} Gr.</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Sugars: {{portion.sugars}} Gr.</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Proteins: {{portion.proteins}} Gr.</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Fats: {{portion.fats}} Gr.</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Fibers: {{portion.fibers}} Gr.</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-accordion>
+    </ion-accordion-group> -->
+    <ion-button (click)="closeModal()">Close</ion-button>

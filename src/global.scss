@@ -24,3 +24,63 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+ion-card {
+    --background: rgba(23, 11, 65, 0.199) !important;
+}
+
+ion-card-title, ion-title {
+    color: #50be8b !important;
+}
+ion-card-subtitle, ion-subtitle, ion-text, ion-label, ion-item {
+    color: #8be4ba;
+}
+// ion-content, ion-item {
+//     //--background: transparent !important;
+//     --ion-item-border-color: #8be4ba5d !important;
+// }
+// ion-segment{
+//     --ion-toolbar-segment-color-checked: #8be4ba !important;
+// }
+
+.ionic-selectable-modal-is-add-item-template-visible .ionic-selectable-add-item-template {
+    background: linear-gradient(20deg, rgba(20,19,19,1) 0%, rgba(70,75,68,1) 100%);
+}
+
+.ionic-selectable-modal ion-icon, .ionic-selectable-modal .searchbar-search-icon,
+.ionic-selectable-modal-is-add-item-template-visible ion-item-divider {
+    color: #8be4ba;
+}
+
+.ionic-selectable-modal-is-add-item-template-visible ion-label,
+.ionic-selectable-modal .searchbar-input,
+.ionic-selectable-modal ion-item-divider {
+    background: transparent;
+    color: #50be8b;
+}
+
+.ionic-selectable-modal-is-add-item-template-visible ion-input {
+    text-align: end;
+}
+
+ion-item-group.ionic-selectable-group > ion-item > ion-icon:nth-child(2) {
+    color: #50be8b;
+}
+
+ion-footer.md:nth-child(3) > ion-toolbar:nth-child(1) {
+    text-align: center;
+}
+
+// ion-button > * {
+//     color: red !important
+// }
+// button > * {
+//     color: red !important
+// }
+// button {
+//     color: red !important
+// }
+// .ionic-selectable-modal ion-footer /* ion-toolbar ion-row ion-col ion-button */ > *  {
+//     color: red;
+//     background: yellow;
+// }

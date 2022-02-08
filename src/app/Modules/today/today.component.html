@@ -1,0 +1,136 @@
+<ion-toolbar>
+  <ion-segment value="Day" scrollable (ionChange)="filterMealView($event)">
+    <ion-segment-button value="Day">
+      <ion-label style="font-size: 10px;">Day</ion-label>
+    </ion-segment-button>
+    <ion-segment-button [disabled]="todays?.length < 1" value="Breakfast">
+      <ion-label style="font-size: 10px;">Breakfast</ion-label>
+    </ion-segment-button>
+    <ion-segment-button [disabled]="todays?.length < 1" value="Snack">
+      <ion-label style="font-size: 10px;">Snacks</ion-label>
+    </ion-segment-button>
+    <ion-segment-button [disabled]="todays?.length < 1" value="Lunch">
+      <ion-label style="font-size: 10px;">Lunch</ion-label>
+    </ion-segment-button>
+    <ion-segment-button [disabled]="todays?.length < 1" value="Dinner">
+        <ion-label style="font-size: 10px;">Dinner</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-item>
+  
+  <ion-grid>  
+    <ion-row class="ion-align-items-center ion-text-center">
+      <ion-col size="12">
+        <ion-card-subtitle>Your Daily Intake:</ion-card-subtitle>
+        <ion-card-title>{{values?.calories || 0}}/3000 Kcal ({{values?.calories | percentage}}%)</ion-card-title>
+        <ion-progress-bar [value]="(values?.calories | percentage) / 100"></ion-progress-bar>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row class="ion-align-items-center ion-text-center">
+      <ion-col size="4">
+        <ion-card-title>Carbs</ion-card-title>
+        <ion-card-subtitle>{{values?.carbs || 0}}g</ion-card-subtitle>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card-title>Proteins</ion-card-title>
+        <ion-card-subtitle>{{values?.proteins || 0}}g</ion-card-subtitle>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card-title>Fats</ion-card-title>
+        <ion-card-subtitle>{{values?.fats || 0}}g</ion-card-subtitle>
+      </ion-col>
+    </ion-row>
+          
+    <ion-row class="ion-align-items-center ion-text-center">
+      <ion-col size="6">
+        <ion-card-title>Sugars</ion-card-title>
+        <ion-card-subtitle>{{values?.sugars || 0}}g</ion-card-subtitle>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card-title>Fibers</ion-card-title>
+        <ion-card-subtitle>{{values?.fibers || 0}}g</ion-card-subtitle>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-item>
+</ion-toolbar>
+<ion-content>
+   
+  <ng-container *ngIf="todaysFiltered?.length > 0; else noMeals">
+      <ion-card *ngFor="let meals of todaysFiltered">
+        <ion-card-header>
+          <ion-card-title>
+            {{meals.name}} ({{
+              meals.meals.length < 2 
+                ? (meals.meals[0].calories | percentage : values.calories) 
+                : (calcValuesByMealName(meals.name) | percentage : values.calories)
+              }}%)
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+
+          <ion-grid *ngFor="let meal of meals.meals">
+            <ion-row class="ion-align-items-center ion-text-center">
+              <ion-col size="12">
+                <ion-card-subtitle>{{meal.date}}</ion-card-subtitle>
+              </ion-col>
+              <ion-col size="12">
+                <ion-card-subtitle>
+                  <ion-text *ngFor="let portion of meal.portions; let i = index">
+                    {{i === 0 ? '' : '- '}}{{portion.food.name}}: {{portion.grams}}gr
+                  </ion-text>
+                </ion-card-subtitle>
+              </ion-col>
+            </ion-row>
+            <ion-row class="ion-align-items-center ion-text-center">
+              <ion-col size="4">
+                <ion-card-title>Calories</ion-card-title>
+                <ion-card-subtitle>{{meal.calories}} Kcal</ion-card-subtitle>
+              </ion-col>
+              <ion-col size="4">
+                <ion-card-title>Carbs</ion-card-title>
+                <ion-card-subtitle>{{meal.carbs}}g</ion-card-subtitle>
+              </ion-col>
+              <ion-col size="4">
+                <ion-card-title>Sugars</ion-card-title>
+                <ion-card-subtitle>{{meal.sugars}}g</ion-card-subtitle>
+              </ion-col>
+            </ion-row>
+            <ion-row class="ion-align-items-center ion-text-center">
+              <ion-col size="4">
+                <ion-card-title>Proteins</ion-card-title>
+                <ion-card-subtitle>{{meal.proteins}}g</ion-card-subtitle>
+              </ion-col>
+              <ion-col size="4">
+                <ion-card-title>Fats</ion-card-title>
+                <ion-card-subtitle>{{meal.fats}}g</ion-card-subtitle>
+              </ion-col>
+              <ion-col size="4">
+                <ion-card-title>Fibers</ion-card-title>
+                <ion-card-subtitle>{{meal.fibers}}g</ion-card-subtitle>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="6">
+                <ion-button (click)='openModal(meal.portions)' expand="block" fill="clear" shape="round">
+                  Details
+                </ion-button>
+              </ion-col>
+              <ion-col size="6">
+                <ion-button color="danger" (click)='deletePortion(meal.name, meal._id)' expand="block" fill="clear" shape="round">
+                  Delete
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>  
+  </ng-container>
+  
+  <ng-template #noMeals>
+    No {{selectedMeal || 'Meals'}} Yet For Today
+  </ng-template>
+
+</ion-content>
+

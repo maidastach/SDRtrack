@@ -1,0 +1,903 @@
+[
+  {
+    "_id": "0",
+    "category": "Carbs",
+    "products": [
+      {
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e6716e"
+        },
+        "calories": 370,
+        "carbs": 70,
+        "proteins": 10,
+        "fats": 3,
+        "fibers": 4,
+        "sugars": 4,
+        "name": "Pasta",
+        "category": "Carbs",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.238Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.238Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e67170"
+        },
+        "calories": 360,
+        "carbs": 80,
+        "proteins": 7,
+        "fats": 2,
+        "fibers": 1,
+        "sugars": 2,
+        "name": "GlutenFree Pasta",
+        "category": "Carbs",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.240Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.240Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e67172"
+        },
+        "calories": 330,
+        "carbs": 50,
+        "proteins": 18,
+        "fats": 2,
+        "fibers": 11,
+        "sugars": 3,
+        "name": "Legumes Pasta",
+        "category": "Carbs",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.244Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.244Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e67174"
+        },
+        "calories": 320,
+        "carbs": 80,
+        "proteins": 7,
+        "fats": 1,
+        "fibers": 1,
+        "sugars": 1,
+        "name": "Rice",
+        "category": "Carbs",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.250Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.250Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e67176"
+        },
+        "calories": 143,
+        "carbs": 25,
+        "proteins": 6,
+        "fats": 2,
+        "fibers": 2,
+        "sugars": 0,
+        "name": "Quinoa",
+        "category": "Carbs",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.254Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.254Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e67178"
+        },
+        "calories": 86,
+        "carbs": 20,
+        "proteins": 2,
+        "fats": 0,
+        "fibers": 3,
+        "sugars": 5,
+        "name": "Sweet Potato",
+        "category": "Carbs",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.257Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.257Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e6717a"
+        },
+        "calories": 400,
+        "carbs": 85,
+        "proteins": 8,
+        "fats": 2,
+        "fibers": 0,
+        "sugars": 0,
+        "name": "Brown Rice",
+        "category": "Carbs",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.261Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.261Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e6717e"
+        },
+        "calories": 350,
+        "carbs": 80,
+        "proteins": 9,
+        "fats": 2,
+        "fibers": 3,
+        "sugars": 1,
+        "name": "Rice Cake",
+        "category": "Carbs",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.271Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.271Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e67180"
+        },
+        "calories": 370,
+        "carbs": 75,
+        "proteins": 17,
+        "fats": 2,
+        "fibers": 7,
+        "sugars": 18,
+        "name": "Cereal",
+        "category": "Carbs",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.273Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.273Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e6717c"
+        },
+        "calories": 320,
+        "carbs": 65,
+        "proteins": 13,
+        "fats": 3,
+        "fibers": 10,
+        "sugars": 3,
+        "name": "Grain",
+        "category": "Carbs",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.267Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.267Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e67182"
+        },
+        "calories": 104,
+        "carbs": 20,
+        "proteins": 1,
+        "fats": 2,
+        "fibers": 2,
+        "sugars": 0,
+        "name": "Potato",
+        "category": "Carbs",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.277Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.277Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e67184"
+        },
+        "calories": 320,
+        "carbs": 45,
+        "proteins": 13,
+        "fats": 3,
+        "fibers": 28,
+        "sugars": 15,
+        "name": "Bran",
+        "category": "Carbs",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.315Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.315Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "1",
+    "category": "Fats",
+    "products": [
+      {
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671a0"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Chia",
+        "category": "Fats",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.396Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.396Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671a4"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Avocado",
+        "category": "Fats",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.405Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.405Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671a6"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Almonds",
+        "category": "Fats",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.414Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.414Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671a8"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Walnuts",
+        "category": "Fats",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.416Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.416Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671ac"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Olive Oil",
+        "category": "Fats",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.421Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.421Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671aa"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Pistachhio",
+        "category": "Fats",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.419Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.419Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671ae"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Peanut Butter",
+        "category": "Fats",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.427Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.427Z"
+        }
+      }
+      
+    ]
+  },
+  {
+    "_id": "2",
+    "category": "Proteins",
+    "products": [
+      {
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e67186"
+        },
+        "calories": 109,
+        "carbs": 0,
+        "proteins": 23,
+        "fats": 2,
+        "fibers": 0,
+        "sugars": 0,
+        "name": "Chicken",
+        "category": "Proteins",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.320Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.320Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e67188"
+        },
+        "calories": 107,
+        "carbs": 0,
+        "proteins": 24,
+        "fats": 2,
+        "fibers": 0,
+        "sugars": 0,
+        "name": "Turkey",
+        "category": "Proteins",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.332Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.332Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e6718a"
+        },
+        "calories": 150,
+        "carbs": 3,
+        "proteins": 30,
+        "fats": 2,
+        "fibers": 0,
+        "sugars": 3,
+        "name": "Bresaola",
+        "category": "Proteins",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.335Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.335Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e6718c"
+        },
+        "calories": 90,
+        "carbs": 0,
+        "proteins": 17,
+        "fats": 1,
+        "fibers": 0,
+        "sugars": 0,
+        "name": "Cod",
+        "category": "Proteins",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.338Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.338Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e6718e"
+        },
+        "calories": 100,
+        "carbs": 0,
+        "proteins": 18,
+        "fats": 1,
+        "fibers": 0,
+        "sugars": 0,
+        "name": "Barramundi",
+        "category": "Proteins",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.340Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.340Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e67190"
+        },
+        "calories": 116,
+        "carbs": 0,
+        "proteins": 25,
+        "fats": 1,
+        "fibers": 0,
+        "sugars": 0,
+        "name": "Tuna",
+        "category": "Proteins",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.342Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.342Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e67192"
+        },
+        "calories": 140,
+        "carbs": 0,
+        "proteins": 24,
+        "fats": 5,
+        "fibers": 0,
+        "sugars": 0,
+        "name": "Salmon",
+        "category": "Proteins",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.355Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.355Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e67194"
+        },
+        "calories": 390,
+        "carbs": 4,
+        "proteins": 35,
+        "fats": 25,
+        "fibers": 0,
+        "sugars": 1,
+        "name": "Parmigiano",
+        "category": "Proteins",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.366Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.366Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e67196"
+        },
+        "calories": 120,
+        "carbs": 0,
+        "proteins": 21,
+        "fats": 5,
+        "fibers": 0,
+        "sugars": 0,
+        "name": "Beef",
+        "category": "Proteins",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.371Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.371Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e67198"
+        },
+        "calories": 70,
+        "carbs": 0.5,
+        "proteins": 6,
+        "fats": 5,
+        "fibers": 0,
+        "sugars": 0.5,
+        "name": "Eggs",
+        "category": "Proteins",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.377Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.377Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e6719a"
+        },
+        "calories": 200,
+        "carbs": 2,
+        "proteins": 35,
+        "fats": 2,
+        "fibers": 0,
+        "sugars": 1,
+        "name": "Proteins Powder",
+        "category": "Proteins",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.383Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.383Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e6719c"
+        },
+        "calories": 90,
+        "carbs": 15,
+        "proteins": 15,
+        "fats": 0.5,
+        "fibers": 9,
+        "sugars": 0,
+        "name": "Beans",
+        "category": "Proteins",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.388Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.388Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e6719e"
+        },
+        "calories": 170,
+        "carbs": 18,
+        "proteins": 12,
+        "fats": 7,
+        "fibers": 9,
+        "sugars": 2,
+        "name": "Lentils",
+        "category": "Proteins",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.392Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.392Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671a2"
+        },
+        "calories": 190,
+        "carbs": 22,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 9,
+        "sugars": 5,
+        "name": "Chick Peas",
+        "category": "Proteins",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.401Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.401Z"
+        }
+      }
+      
+    ]
+  },
+  {
+    "_id": "3",
+    "category": "Vegetables",
+    "products": [
+      {
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671b0"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Spinach",
+        "category": "Vegetables",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.431Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.431Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671b4"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Cucumber",
+        "category": "Vegetables",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.436Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.436Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671b6"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Zucchine",
+        "category": "Vegetables",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.438Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.438Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671b2"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Asparagus",
+        "category": "Vegetables",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.433Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.433Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671ba"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Rocket",
+        "category": "Vegetables",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.441Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.441Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671b8"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Broccoli",
+        "category": "Vegetables",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.439Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.439Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671be"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Cherry Tomato",
+        "category": "Vegetables",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.449Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.449Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671bc"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Carrots",
+        "category": "Vegetables",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.444Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.444Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671c0"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Fagiolini",
+        "category": "Vegetables",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.450Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.450Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671c2"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Pumpkin",
+        "category": "Vegetables",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.452Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.452Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671c4"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Egplant",
+        "category": "Vegetables",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.454Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.454Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": "4",
+    "category": "Fruits",
+    "products": [
+      {
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671c8"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Watermelon",
+        "category": "Fruits",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.459Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.459Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671c6"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Apple",
+        "category": "Fruits",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.456Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.456Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671cc"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Banana",
+        "category": "Fruits",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.465Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.465Z"
+        }
+      },{
+        "_id": {
+          "$oid": "60f92bc82f13dc43b4e671ca"
+        },
+        "calories": 350,
+        "carbs": 70,
+        "proteins": 12,
+        "fats": 3,
+        "fibers": 20,
+        "sugars": 5,
+        "name": "Mango",
+        "category": "Fruits",
+        "createdAt": {
+          "$date": "2021-07-22T08:26:48.463Z"
+        },
+        "updatedAt": {
+          "$date": "2021-07-22T08:26:48.463Z"
+        }
+      }
+    ]
+  }
+]

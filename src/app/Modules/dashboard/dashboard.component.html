@@ -1,0 +1,269 @@
+<ion-content>
+
+<ion-card>
+  <ion-grid>
+    <ion-row class="ion-align-items-center ion-text-center">
+      <ion-col size="8">
+        <ion-card-subtitle>Today's Summary:</ion-card-subtitle>
+        <ion-card-title>{{values?.calories || 0}}/3000 Kcal</ion-card-title>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button color='custom' routerLink="/tabs/today" fill="outline">Details</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-center ion-text-center">
+      <ion-col size="4">
+        <ion-card-title>Carbs</ion-card-title>
+        <ion-card-subtitle>{{values?.carbs || 0}}g</ion-card-subtitle>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card-title>Proteins</ion-card-title>
+        <ion-card-subtitle>{{values?.proteins || 0}}g</ion-card-subtitle>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card-title>Fats</ion-card-title>
+        <ion-card-subtitle>{{values?.fats || 0}}g</ion-card-subtitle>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card> 
+<ion-card>
+  <ion-item lines="none" *ngIf="!isMealSelected">
+    <ion-title>Add a New Meal!</ion-title>
+    <!-- <ion-label>Select Meal Type</ion-label> -->
+    <ion-select (ionChange)='onSelectMeal($event)' value="" okText="Ok" cancelText="Cancel" interface="popover" required>
+      <ion-select-option [value]="meal" *ngFor="let meal of mealTypes">{{meal}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-card-content *ngIf="isMealSelected">
+    <ion-fab vertical="top" horizontal="start" slot="fixed">
+      <ion-fab-button color="custom" size='small' (click)='changeMeal()'>
+        <ion-icon src="/assets/icon/return.svg"></ion-icon>          
+      </ion-fab-button>
+    </ion-fab>   
+    <ion-item lines="none">
+      <ion-grid fixed>
+        <ion-row>   
+          <ion-col size="12">
+            <ion-card-title class="ion-text-center">Add quantities for your<br>{{mealSelected}}</ion-card-title>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <form [formGroup]="mealForm" novalidate>
+              <ion-item lines="none">
+                <ion-label *ngIf="!mealForm.controls['food'].value">Select Product</ion-label>
+                <ionic-selectable
+                  #productComponent
+                  [style]="mealForm.controls['food'].value ? { 'maxWidth': '100%', 'width': '100%' } : ''"
+                  formControlName="food"
+                  [(items)]="productsList"
+          
+                  itemValueField="_id"
+                  itemTextField="name"
+                  groupValueField="category"
+                  groupTextField="category"
+          
+                  [canSearch]="true"
+                  [canClear]="true"
+                  [canAddItem]="true"
+                  [canSaveItem]="true"
+                  [canDeleteItem]="true"
+          
+                  (onAddItem)="onAddProduct($event)"
+                  (onSaveItem)="onSaveProduct($event)"
+                  (onDeleteItem)="onDeleteProduct($event)"
+                  (onChange)="gramsInput.setFocus()"
+                  (onOpen)="onOpenSearchModal($event)"
+                >
+                  <ng-template ionicSelectableItemTemplate let-product="item">
+                    {{product.name}}
+                  </ng-template>
+                  <ng-template ionicSelectableAddItemTemplate let-product="item" let-isAdd="isAdd">
+                    <form [formGroup]="productForm" novalidate>
+                      <ion-list>
+                        <ion-item-divider>
+                          {{isAdd ? 'Add' : 'Edit'}} Product
+                        </ion-item-divider>
+                        <ion-item>
+                          <ion-label>Name</ion-label>
+                          <ion-input
+                            type="text"
+                            autocapitalize="on"
+                            [autofocus]='true'
+                            enterkeyhint='next'
+                            formControlName="name"
+                            autocorrect="off"
+                            autocapitalize="none">
+                          </ion-input>
+                        </ion-item>
+                        <ion-item>
+                          <ion-label>Category</ion-label>
+                          <ionic-selectable
+                            enterkeyhint='next'  
+                            formControlName="category"
+                            itemValueField="category"
+                            itemTextField="category"
+                            [items]="foodObject">
+                          </ionic-selectable>
+                        </ion-item>
+                        <ion-item>
+                          <ion-label>Calories</ion-label>
+                          <ion-input
+                            type="text"
+                            placeholder="Kcal for 100 Grams"
+                            enterkeyhint='next'
+                            formControlName="calories"
+                            autocorrect="off"
+                            autocapitalize="none">
+                          </ion-input>
+                        </ion-item>
+                        <ion-item>
+                          <ion-label>Carbs</ion-label>
+                          <ion-input
+                            type="text"
+                            placeholder="Value for 100 Grams"
+                            enterkeyhint='next'
+                            formControlName="carbs"
+                            autocorrect="off"
+                            autocapitalize="none">
+                          </ion-input>
+                        </ion-item>
+                        <ion-item>
+                          <ion-label>Sugars</ion-label>
+                          <ion-input
+                            type="text"
+                            placeholder="Value for 100 Grams"
+                            enterkeyhint='next'
+                            formControlName="sugars"
+                            autocorrect="off"
+                            autocapitalize="none">
+                          </ion-input>
+                        </ion-item>
+                        <ion-item>
+                          <ion-label>Proteins</ion-label>
+                          <ion-input
+                            type="text"
+                            placeholder="Value for 100 Grams"
+                            enterkeyhint='next'
+                            formControlName="proteins"
+                            autocorrect="off"
+                            autocapitalize="none">
+                          </ion-input>
+                        </ion-item>
+                        <ion-item>
+                          <ion-label>Fats</ion-label>
+                          <ion-input
+                            type="text"
+                            placeholder="Value for 100 Grams"
+                            enterkeyhint='next'
+                            formControlName="fats"
+                            autocorrect="off"
+                            autocapitalize="none">
+                          </ion-input>
+                        </ion-item>
+                        <ion-item>
+                          <ion-label>Fibers</ion-label>
+                          <ion-input
+                            type="text"
+                            placeholder="Value for 100 Grams"
+                            enterkeyhint='send'
+                            formControlName="fibers"
+                            autocorrect="off"
+                            autocapitalize="none">
+                          </ion-input>
+                        </ion-item>
+                      </ion-list>
+                    </form>
+                    <ion-footer>
+                      <ion-toolbar>
+                        <ion-row>
+                          <ion-col col-6>
+                            <ion-button full fill='outline' no-margin color="custom"
+                              (click)="productComponent.hideAddItemTemplate()">
+                              Cancel
+                            </ion-button>
+                          </ion-col>
+                          <ion-col col-6>
+                            <ion-button full fill='outline' no-margin color="custom"
+                              (click)="isAdd ? addProduct() : saveProduct(product)"
+                              [disabled]="!productForm.valid">
+                              {{isAdd ? 'Create' : 'Save'}}
+                            </ion-button>
+                          </ion-col>
+                        </ion-row>
+                      </ion-toolbar>
+                    </ion-footer>
+                  </ng-template>
+                </ionic-selectable>
+              </ion-item>
+        
+              <ion-item>
+                  <ion-input #gramsInput enterkeyhint="send" inputmode="numeric" placeholder="Grams" type="text" formControlName="grams"></ion-input>
+              </ion-item>
+        
+              <ion-button slot='end' color="custom" fill="solid" expand="block"
+                (click)='addPortion()' [disabled]="!mealForm.valid">
+                  Add
+              </ion-button>
+        
+            </form>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-card-content>
+</ion-card>
+  <ion-card *ngIf="isMealSelected && meal && meal?.portions.length > 0"><!--  -->
+    <ion-card-content>
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12">
+            <ion-card-subtitle style="font-size: large;">
+              {{mealSelected}} Portions
+            </ion-card-subtitle>
+          </ion-col>
+        </ion-row>
+        <ion-row *ngFor="let portion of meal?.portions" class="ion-align-items-center" style="font-size: larger;">
+          <ion-col size="7">{{portion.food.name}}</ion-col>
+          <ion-col class="ion-text-end" size="4">{{portion.grams}} Gr.</ion-col>
+          <ion-col class="ion-text-end" size="1" style="color: red;">
+            <span style="display: flex; cursor: pointer;">
+              <ion-icon size="large" name="close-circle-outline" (click)="deletePortion(portion._id)"></ion-icon>
+            </span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-item button="true" id="open-modal">
+              <ion-label>Date</ion-label>
+              <ion-text slot="end">{{ dateForm }}</ion-text>
+              <ion-modal trigger="open-modal">
+                <ng-template>
+                  <ion-content>
+                    <ion-datetime
+                      #popoverDatetime
+                      showDefaultButtons
+                      [showDefaultTitle]="true"
+                      [max]='todaysMaxDate'
+                      min='2021'
+                      minuteValues="0,15,30,45"
+                      (ionChange)='onDateChange(popoverDatetime)'
+                    ></ion-datetime>
+                  </ion-content>
+                </ng-template>
+              </ion-modal>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid> 
+      <ion-button color="custom" (click)='addMeal()' [disabled]="!dateForm || !meal || meal.portions.length < 1" slot="end">
+        Add Meal
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<!-- <ion-label color="danger" position="floating" *ngIf="addExpenseForm.controls.amount.invalid && addExpenseForm.controls.amount.touched">
+        Amount is Not Valid
+    </ion-label> -->
